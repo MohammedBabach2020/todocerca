@@ -649,7 +649,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `lastname`, `email`, `phone`, `password`, `country`, `day`, `mounth`, `year`, `created_at`, `updated_at`, `role`) VALUES
-(13, 'Admin', NULL, 'admin@afyla.com', NULL, '$2y$10$oAD1n9z5.DYQBmixNWmK4ebVenhIRd.O9hRfpXDUCxkmAPTeTclAy', NULL, NULL, NULL, NULL, '2021-10-03 21:13:55', '2021-10-03 21:13:55', '2'),
+(13, 'Admin', NULL, 'admin@TODO CERCA.com', NULL, '$2y$10$oAD1n9z5.DYQBmixNWmK4ebVenhIRd.O9hRfpXDUCxkmAPTeTclAy', NULL, NULL, NULL, NULL, '2021-10-03 21:13:55', '2021-10-03 21:13:55', '2'),
 (14, 'dabla', 'simo', 'dabla@gmail.com', '65464654', '$2y$10$3l8VZT99sA6/m5JjBojaHOjAoavzUINj.XMINIJM6qtR9jqXAb8EO', 'USA', '16', '9', '1916', '2021-10-12 13:28:04', '2021-10-12 17:53:00', '2');
 
 -- --------------------------------------------------------

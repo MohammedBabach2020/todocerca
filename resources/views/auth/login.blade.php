@@ -168,7 +168,7 @@ background: #001a13;
 </head>
 <body>
     {{-- <a href="/" style="color:white !important;"> <img class="m-3"  src="{{asset('/logo.png')}}" width="100px;"> </a> --}}
-    <a href="/"> <h2  style="color:black !important; " ><b>AFYLA</b></h2></a>
+    <a href="/"> <h2  style="color:black !important; " ><b>TODO CERCA</b></h2></a>
     <div class="moda" id="form">
        
 <div class="popform">

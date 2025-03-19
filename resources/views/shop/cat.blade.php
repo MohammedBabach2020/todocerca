@@ -1,71 +1,71 @@
 @extends('app')
 
 @section('title')
-{{$cat}}
+    {{ $cat }}
 @endsection
 
 @section('content')
+    @include('nav')
 
-@include('nav')
 
 
-      <div class=" container mt-4 pt-1 text-center bg-white">
 
-        <p class="fs-2 text-secondary"><b>{{$cat}}</b></p>
+    <div class="container-fluid p-0 m-0" style="height: 600px; max-height:50vh !important;">
+        <img src="{{ asset('storage/' . $image) }}" class="image-responsive" style="width:100%; height:100%;">
 
-      </div>
+    </div>
 
-      <div class="container pt-2 pb-2 text-start">
-          <div class="row">
-              <div class="col-md-6 row">
-            <div class="col-4 text-center">
-                <select class="form-select w-100 rounded-0 border-0 text-center" aria-label="Default select example" style="background-color: #ECE7DF;">
-        <option selected>CATEGORY</option>
-      </select>
-              </div>
-            <div class="col-4 text-center">
-                <select class="form-select w-100 rounded-0 border-0 text-center" aria-label="Default select example" style="background-color: #ECE7DF;">
-        <option selected>FILTERS</option>
-      </select>
-              </div>
-            <div class="col-4 text-center">
-                <select class="form-select w-100 rounded-0 border-0 text-center" aria-label="Default select example" style="background-color: #ECE7DF;">
-        <option selected>SORT BY</option>
-      </select>
-              </div>
+
+
+
+    <div class="container-fluid p-5">
+        <div class="row  g-3 mb-5">
+            <div class="col-md-2">
+                <h1 class="text-center  font-green p-2 d-inline" style="border-bottom: 2px solid ;">{{ $cat }}</h1>
             </div>
-          </div>
-      </div>
 
-      <div class="container">
-          <div class="row justify-content center">
-            @foreach($products as $item)
-              <div class="col-md-4 ps-1 pe-1 mt-2 mb-2">
-                  <div class="col-12 text-end bg-white pe-3 pt-3 pb-2">
-                    <i class="far fa-heart fs-3"></i>
-                  </div>
-                  <div class="produ h-100" style="direction: ltr">
-                    <img class="w-100 h-100 produ-img" src="{{asset('storage/'.$item->image)}}">
-                    <div class="mt-2 ps-2 pe-2">
-                        <?php $sizat = \App\Size::where('prod_id',$item->id)->orderBy('size', 'ASC')->get(); ?>
-                        <?php $sizatprice = \App\Size::where('prod_id',$item->id)->first(); ?>
-                        
-                        <span style="float:left !important;" > {{$item->name}} <br>
-                            @foreach($sizat as $sizes)
-                            {{$sizes->size}}
-                            @endforeach
-                        </span>
-                      
-          @if(!empty($sizatprice))
-                        <span style="float:right !important;" >{{$sizatprice->price}} EUR</span>
-                        @endif
+        </div>
+        <div class="row g-3 justify-content-center">
+
+            @foreach ($products as $item)
+                <div class="col-md-2 p-2 bg-light d-flex shadow  justify-content center align-items-center flex-column mx-1"
+                    style="border-radius: 35px">
+                    <h5 class="card-title text-left p-2">{{ $item->name }}</h5>
+                    <div class="mb-3" style="position: relative; height:100%;">
+                        <form class="mt-2" action="{{ route('cart.addnow') }}" method="POST">
+                            @csrf
+                            <input type="hidden" name="id" value="{{ $item->id }}">
+
+                            <input type="hidden" name="qty" value="1">
+                            <input type="hidden" name="price" value="{{ $item->selling_price }}">
+
+
+                            <div id="cart-icon" role="button" onclick="this.closest('form').submit()">
+                                <i class="fas fa-plus font-green"></i>
+                            </div>
+
+                        </form>
+
+                        <a href="/product/{{ $item->id }}/{{ $item->name }}">
+                            <div id="eye-icon">
+
+
+                                <i class="fas fa-eye font-green"></i>
+
+                            </div>
+                        </a>
+                        <div style="position:absolute; bottom:10px; left:10px; ">
+                            <h5 class="text-light fw-bold">{{ $item->selling_price }} £</h5>
                         </div>
-                  </div>
-              </div>
-              @endforeach
-          </div>
-      </div>
+                        <img src="{{ asset('storage/' . $item->image) }}" class="card-img" alt="{{ $item->name }}"
+                            style="border-radius: 35px">
+                    </div>
 
-  <div class="container mb-5 mt-5 pt-5 pb-5"></div>
 
+                </div>
+            @endforeach
+        </div>
+    </div>
+
+    <div class="container mb-5 mt-5 pt-5 pb-5"></div>
 @endsection

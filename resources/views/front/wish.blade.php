@@ -47,7 +47,7 @@ Login
                 <i class="fas fa-share-alt mx-2"></i>
                  | Sort by</div>
             <div class="col w-25">
-            <select name="year" class="form-select border-2 rounded-0 border-secondary text-center" style="background-color: #ECE7DF" aria-label="Default select example">
+            <select name="year" class="form-select border-2 rounded-0 border-secondary text-center" style="background-color: white" aria-label="Default select example">
                 <option selected>Date</option>
                 <option>Name A-Z</option>
                 <option>Name Z-A</option>

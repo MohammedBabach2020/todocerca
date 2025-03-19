@@ -22,7 +22,7 @@
 <div class="container-fluid">
 
     <div class="row align-items-start">
-        <div class="col-md-3 nav-pills me-3 border-end border-1 border-secondary pt-5 pb-5 pe-0 ps-0" style="background-color: #ECE7DF" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <div class="col-md-3 nav-pills me-3 border-end border-1 border-secondary pt-5 pb-5 pe-0 ps-0" style="background-color: white" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <a href="/myprofil" class="text-uppercase text-secondary w-100 fw-bold btn border-0 pt-3 pb-3 text-start ps-4 rounded-0 fs-6" type="button">PROFILE</a>
           <a href="/user/change_password" class="text-uppercase text-secondary w-100 fw-bold btn border-0 pt-3 pb-3 text-start ps-4 rounded-0 fs-6" type="button">CHANGE YOUR PASSWORD</a>
           <a href="/user/orders" class="text-uppercase text-secondary w-100 fw-bold btn border-0 pt-3 pb-3 text-start ps-4 rounded-0 fs-6" type="button">ORDERS</a>
@@ -41,28 +41,28 @@
                       <input type="hidden" name="id" value="{{$aut->id}}">
                       <input type="hidden" name="type" value="add">
                       <div class="mb-2 col-md-6">
-                        <input style="background-color: #ECE7DF" type="text" name="name" placeholder="FIRST NAME" class="@error('email') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input style="background-color: white" type="text" name="name" placeholder="FIRST NAME" class="@error('email') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp">
                       </div>
                       <div class="mb-2 col-md-6">
-                        <input style="background-color: #ECE7DF" type="text" name="lastname" placeholder="LAST NAME" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
+                        <input style="background-color: white" type="text" name="lastname" placeholder="LAST NAME" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
                       </div>
                       <div class="mb-2 col-md-12">
-                        <input style="background-color: #ECE7DF" type="text" name="address" placeholder="YOUR ADDRESS" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
+                        <input style="background-color: white" type="text" name="address" placeholder="YOUR ADDRESS" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
                       </div>
                       <div class="mb-2 col-md-4">
-                        <input style="background-color: #ECE7DF" type="text" name="city" placeholder="CITY" class="@error('email') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input style="background-color: white" type="text" name="city" placeholder="CITY" class="@error('email') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp">
                       </div>
                       <div class="mb-2 col-md-3">
-                        <input style="background-color: #ECE7DF" type="number" name="zip" placeholder="ZIP CODE" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
+                        <input style="background-color: white" type="number" name="zip" placeholder="ZIP CODE" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
                       </div>
                       <div class="mb-2 col-md-5">
-                        <input style="background-color: #ECE7DF" type="text" name="state" placeholder="STATE/ PROVINCE" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
+                        <input style="background-color: white" type="text" name="state" placeholder="STATE/ PROVINCE" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
                       </div>
                       <div class="mb-2 col-md-5">
-                        <input style="background-color: #ECE7DF" type="text" name="country" placeholder="COUNTRY" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
+                        <input style="background-color: white" type="text" name="country" placeholder="COUNTRY" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
                       </div>
                       <div class="mb-2 col-md-7">
-                        <input style="background-color: #ECE7DF" type="number" name="phone" placeholder="TELEPHONE 1" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
+                        <input style="background-color: white" type="number" name="phone" placeholder="TELEPHONE 1" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
                       </div>
                       <div class="form-check float-start">
                         <input type="checkbox" name="defaulte" class="form-check-input rounded-0 border-3 border-dark" id="exampleCheck1">
@@ -85,28 +85,28 @@
                       <input type="hidden" name="idad" value="{{$adrs->id}}">
                       <input type="hidden" name="type" value="edit">
                       <div class="mb-2 col-md-6">
-                        <input style="background-color: #ECE7DF" value="{{$adrs->name}}" type="text" name="name" placeholder="FIRST NAME" class="@error('email') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input style="background-color: white" value="{{$adrs->name}}" type="text" name="name" placeholder="FIRST NAME" class="@error('email') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp">
                       </div>
                       <div class="mb-2 col-md-6">
-                        <input style="background-color: #ECE7DF" value="{{$adrs->lastname}}" type="text" name="lastname" placeholder="LAST NAME" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
+                        <input style="background-color: white" value="{{$adrs->lastname}}" type="text" name="lastname" placeholder="LAST NAME" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
                       </div>
                       <div class="mb-2 col-md-12">
-                        <input style="background-color: #ECE7DF" value="{{$adrs->address}}" type="text" name="address" placeholder="YOUR ADDRESS" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
+                        <input style="background-color: white" value="{{$adrs->address}}" type="text" name="address" placeholder="YOUR ADDRESS" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
                       </div>
                       <div class="mb-2 col-md-4">
-                        <input style="background-color: #ECE7DF" value="{{$adrs->city}}" type="text" name="city" placeholder="CITY" class="@error('email') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input style="background-color: white" value="{{$adrs->city}}" type="text" name="city" placeholder="CITY" class="@error('email') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp">
                       </div>
                       <div class="mb-2 col-md-3">
-                        <input style="background-color: #ECE7DF" value="{{$adrs->zip}}" type="number" name="zip" placeholder="ZIP CODE" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
+                        <input style="background-color: white" value="{{$adrs->zip}}" type="number" name="zip" placeholder="ZIP CODE" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
                       </div>
                       <div class="mb-2 col-md-5">
-                        <input style="background-color: #ECE7DF" value="{{$adrs->state}}" type="text" name="state" placeholder="STATE/ PROVINCE" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
+                        <input style="background-color: white" value="{{$adrs->state}}" type="text" name="state" placeholder="STATE/ PROVINCE" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
                       </div>
                       <div class="mb-2 col-md-5">
-                        <input style="background-color: #ECE7DF" value="{{$adrs->country}}" type="text" name="country" placeholder="COUNTRY" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
+                        <input style="background-color: white" value="{{$adrs->country}}" type="text" name="country" placeholder="COUNTRY" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
                       </div>
                       <div class="mb-2 col-md-7">
-                        <input style="background-color: #ECE7DF" value="{{$adrs->phone}}" type="number" name="phone" placeholder="TELEPHONE 1" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
+                        <input style="background-color: white" value="{{$adrs->phone}}" type="number" name="phone" placeholder="TELEPHONE 1" class="@error('password') is-invalid @enderror p-3 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
                       </div>
                       <div class="form-check float-start">
                         <input type="checkbox" 

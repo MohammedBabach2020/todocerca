@@ -1,41 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Domine:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-    
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
-/*------------------------------------------------------------------------------------------------*/
+* {
 
-*{
+    font-family: "Josefin Sans", serif;
 
-    font-family: 'Avenir', sans-serif;
-   
 }
-.wishlog{
 
-width: 100% !important;
-height: fit-content !important;
+.wishlog {
 
-background-color: #c8c5c0 !important;
+    width: 100% !important;
+    height: fit-content !important;
+
+    background-color: #ffffff !important;
 
 
 
 }
 
-.support{
+.support {
 
-width: 100% !important;
-height: 100vh!important;
-direction: ltr;
+    width: 100% !important;
+    height: 100vh !important;
+    direction: ltr;
 }
 
-.support .flexbox{
-  width: 100% !important;
-  height: 100% !important;
-  flex-wrap: wrap !important;
+.support .flexbox {
+    width: 100% !important;
+    height: 100% !important;
+    flex-wrap: wrap !important;
 
 }
-.support .flexbox .card-support{
-height: 600px !important;
-width:400px !important;
-background-color: white !important;
+
+.support .flexbox .card-support {
+    height: 600px !important;
+    width: 400px !important;
+    background-color: white !important;
 
 }
 
@@ -50,10 +49,10 @@ background-color: white !important;
     background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
-  
-  }
-  
-  .rightsidenav {
+
+}
+
+.rightsidenav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -63,217 +62,229 @@ background-color: white !important;
     background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
-  
-  }
 
-  .rightsidenav ul {
+}
 
-list-style: none;
-padding: 0px;
+.rightsidenav ul {
 
-  }
+    list-style: none;
+    padding: 0px;
 
-  .rightsidenav ul li img{
+}
 
-padding-top: 0.8em;
+.rightsidenav ul li img {
 
-  }
+    padding-top: 0.8em;
+
+}
 
 
-  .sidenav a {    
+.sidenav a {
     text-decoration: none;
-    font-size: 15px;   
+    font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
     color: black;
     display: block;
 
     transition: 0.3s;
-  }
-  
+}
 
-  .sidenav .closebtn {
-  
-    
+
+.sidenav .closebtn {
+
+
     font-size: 36px;
-   
-  }
-   .closebtn {
-  
-    
+
+}
+
+.closebtn {
+
+
     font-size: 36px;
-   
-  }
+
+}
 
 
 
-  .part2 .closebtn {
-  
-    
+.part2 .closebtn {
+
+
     font-size: 36px;
-   cursor: pointer;
-  }
-  .rightsidenav .closebtn {
-  
-    
+    cursor: pointer;
+}
+
+.rightsidenav .closebtn {
+
+
     font-size: 36px;
-   
-  }
-  
 
-  .sidenav ul {
-
-list-style: none;
+}
 
 
-  }
-  .sidenav ul li{
+.sidenav ul {
+
+    list-style: none;
+
+
+}
+
+.sidenav ul li {
 
     display: block !important;
-  }
+}
 
-  .sidenav ul .item {
+.sidenav ul .item {
 
-position: relative !important;
-padding-bottom: 1rem;
-  }
+    position: relative !important;
+    padding-bottom: 1rem;
+    padding-right: 1rem !important;
+}
 
-  .sidenav ul .item  i {
+.sidenav ul .item i {
 
-position: absolute;
-right: 0;
-font-size: 20pt;
-margin-right: 00.175rem;
+    position: absolute;
+    right: 0;
+    font-size: 20pt;
+    margin-right: 00.175rem;
 
-  }
+}
 
-  .sidenav ul .item::after {
-      content: '' !important;
-       position: absolute !important;
-width: 100% !important;
-height: 0.175rem !important;
-left: 0 !important;
-bottom: 0 !important;
-background-color: black !important;
-transform: scale(0,1);
-transition: transform 0.3s ease;
-  }
+.sidenav ul .item::after {
+    content: '' !important;
+    position: absolute !important;
+    width: 100% !important;
+    height: 0.175rem !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    background-color: black !important;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
 
 
-  .sidenav ul .item:hover::after {
+.sidenav ul .item:hover::after {
 
-    transform: scale(1,1);
+    transform: scale(1, 1);
 
-  }
+}
 
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
 
-  @media screen and (min-width: 800px) {
-   .produ{
-height: 500px !important;
+    .sidenav a {
+        font-size: 18px;
+    }
+}
 
-   }
-  }
+@media screen and (min-width: 800px) {
+    .produ {
+        height: 500px !important;
+
+    }
+}
+
 /*------------------------------------------------------------------------------------------------*/
 
 
 
 
-.gotop{
-    position:fixed;
-    bottom:10px;
-    right:20px;
-    font-size:40px;
-    background:none;
-    z-index:9999;
+.gotop {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    font-size: 40px;
+    background: none;
+    z-index: 9999;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
     transition: 0.3s;
 }
 
-.namcat:hover{
-   
+.namcat:hover {
+
     transition: 0.3s;
 }
 
-a:hover{
-    
+a:hover {
+
     transition: 0.3s;
 }
 
-.produ{
+.produ {
     position: relative !important;
     height: 650px !important;
 }
-.produ-img{
+
+.produ-img {
     opacity: 1 !important;
     height: 650px !important;
-  display: block !important;
-  transition: .5s ease !important;
-  backface-visibility: hidden !important;
+    display: block !important;
+    transition: .5s ease !important;
+    backface-visibility: hidden !important;
 }
+
 .produ-btn {
     transition: .5s ease !important;
-  opacity: 0 !important;
-  position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+    opacity: 0 !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .produ:hover .produ-img {
-  opacity: 0.3 !important;
+    opacity: 0.3 !important;
 }
 
 .produ:hover .produ-btn {
-  opacity: 1 !important;
+    opacity: 1 !important;
 }
 
 html {
     position: relative;
-  min-height: 100%;
-  }
+    min-height: 100%;
+}
 
-body{
+body {
     margin: 0;
- 
-    background-color:#ECE7DF !important;
+
     overflow-x: hidden;
 }
 
-h2{
- 
+h2 {
+
     text-transform: uppercase;
 }
 
-.btn{
+.btn {
     outline: none !important;
 }
 
 /* Header */
-.headr .navbar{
+.headr .navbar {
     background-color: white;
- 
+
     text-transform: uppercase;
     font-size: 14px;
-   
+
 }
 
-.menu{
+.menu {
     background-color: white;
     text-transform: uppercase;
     font-size: 14px;
-   
+
 }
-.nav-link{
+
+.nav-link {
     color: black !important;
 
 }
@@ -283,41 +294,43 @@ h2{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
-.dropdown-menu{
-  
 }
-.dropdown-menu .dropdown-item{
+
+.dropdown-menu {}
+
+.dropdown-menu .dropdown-item {
     color: white !important;
     padding: 10px !important;
 }
-.dropdown-menu .dropdown-item:hover{
+
+.dropdown-menu .dropdown-item:hover {
     background-color: white !important;
-    
+
     transition: 0.2s;
 }
-.headr{
+
+.headr {
     background-repeat: no-repeat;
     background-size: cover;
-  
+
 }
 
-.headr h1{
-   
+.headr h1 {
+
     text-transform: none;
 }
 
 /* Header */
 
 /* Trends */
-.trends hr{
+.trends hr {
     border-top: 2px solid #9b6502;
     width: 70%;
 }
 
-.trends .overlay{
-    position: absolute;top: 0;
+.trends .overlay {
+    position: absolute;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -329,29 +342,31 @@ h2{
     background: rgba(255, 203, 71, 0.5);
 }
 
-.trends .pic:hover .overlay{
+.trends .pic:hover .overlay {
     display: block;
     transition: 0.5s;
 }
 
-.trends button:hover{
-  
+.trends button:hover {
+
     color: rgb(255, 255, 255);
     border: 2px solid white;
 }
+
 /* Trends */
 
 /* Boutique */
 
-.boutique hr{
+.boutique hr {
     border: 2px solid #9b6502;
     width: 70%;
 }
 
 .flip-card {
     height: 200px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
 
 .flip-card-inner {
     position: relative;
@@ -360,49 +375,51 @@ h2{
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
+    /* Safari */
     backface-visibility: hidden;
-  }
-  
-  
-  /* Style the back side */
-  .flip-card-back {
+}
+
+
+/* Style the back side */
+.flip-card-back {
     color: white;
     width: 100%;
     transform: rotateY(180deg);
-  }
+}
 
-  .boutique h4{
-      text-transform: uppercase !important;
-  }
+.boutique h4 {
+    text-transform: uppercase !important;
+}
 
 
 /* Boutique */
 
 /* About */
 
-.about{
+.about {
     background-color: #f3f3f3;
 }
 
-.about hr{
+.about hr {
     border: 2px solid #9b6502;
     width: 70%;
 }
 
-.about p{
+.about p {
     text-align: justify;
 }
 
@@ -410,11 +427,12 @@ h2{
 
 /* Avis */
 
-.avis h5{
+.avis h5 {
 
     text-transform: uppercase;
 }
-.avis p{
+
+.avis p {
     color: black;
     text-align: justify;
 }
@@ -423,56 +441,56 @@ h2{
 
 /* Footer */
 
-.footer{
+.footer .container {
 
+    background-color: #6b705c !important;
     direction: ltr;
 }
-.infos{
-    background-color: #ECE7DF;
-  
+
+.infos {
+    color: white !important;
+
+
 }
-.infos a{
-    color: white;
+
+.infos a {
+    color: white !important;
 }
-.infos a:hover{
- 
-}
-.infos input:focus{
+
+.infos a:hover {}
+
+.infos input:focus {
     outline: none !important;
 
 }
+
 .infos input {
 
-width: 500px;
+    width: 500px;
 
-border: none;
+    border: none;
 
-border-bottom: 3px solid #5E5E5E;
+    border-bottom: 3px solid #5E5E5E;
 
 }
 
-.infos ::placeholder{
+.infos ::placeholder {
     color: #5E5E5E !important;
-  opacity: 1;
+    opacity: 1;
 }
 
-.infos p, .designed p{
- 
-}
-.infos span{
+.infos p,
+.designed p {}
+
+.infos span {
     color: white !important;
 }
-.designed span{
-    color:black;
+
+.designed span {
+    color: black;
 }
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px; /* Set the fixed height of the footer here */
-    background-color: #f5f5f5;
-  }
+
 
 /* Footer */
 
@@ -480,25 +498,24 @@ border-bottom: 3px solid #5E5E5E;
 
 @media screen and (max-width: 767px) {
 
-    .trends .col-md-2{
+    .trends .col-md-2 {
         width: 45% !important;
-            margin: none !important;
+        margin: none !important;
     }
 
-    .boutique .flip-card{
+    .boutique .flip-card {
         margin-top: 50px !important;
     }
 
-    .about iframe{
+    .about iframe {
         height: 280px;
     }
 }
 
 @media screen and (max-width: 425px) {
 
-    .about iframe{
+    .about iframe {
         height: 180px;
     }
 
 }
-   

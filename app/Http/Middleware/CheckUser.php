@@ -16,13 +16,13 @@ class CheckUser
     public function handle($request, Closure $next)
     {
         $user = \App\User::where('id', session()->get('logged'))->first();
-        if(session()->has('logged')){
-        if ($user->role !== "2") {
+        if (session()->has('logged')) {
+            if ($user->role !== "2" && $user->role !== "1") {
+                return redirect('/');
+            }
+        } else {
             return redirect('/');
         }
-    }else{
-        return redirect('/');
-    }
-    return $next($request);
+        return $next($request);
     }
 }

@@ -22,7 +22,7 @@
 <div class="container-fluid">
 
     <div class="row align-items-start">
-        <div class="col-md-3 nav-pills me-3 border-end border-1 border-secondary pt-5 pb-5 pe-0 ps-0" style="background-color: #ECE7DF" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <div class="col-md-3 nav-pills me-3 border-end border-1 border-secondary pt-5 pb-5 pe-0 ps-0" style="background-color: white" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <a href="/myprofil" class="text-uppercase text-secondary w-100 fw-bold active btn border-0 pt-3 pb-3 text-start ps-4 rounded-0 fs-6" type="button">PROFILE</a>
           <a href="/user/change_password" class="text-uppercase text-secondary w-100 fw-bold btn border-0 pt-3 pb-3 text-start ps-4 rounded-0 fs-6" type="button">CHANGE YOUR PASSWORD</a>
           <a href="/user/orders" class="text-uppercase text-secondary w-100 fw-bold btn border-0 pt-3 pb-3 text-start ps-4 rounded-0 fs-6" type="button">ORDERS</a>
@@ -57,19 +57,19 @@
   @csrf
   <input type="hidden" name="id" value="{{$aut->id}}">
   <div class="mb-2 col-md-6">
-    <input style="background-color: #ECE7DF" type="text" name="name" value="{{$aut->name}}" placeholder="FIRST NAME" class="@error('email') is-invalid @enderror p-2 form-control border-1 border-secondary rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input style="background-color: white" type="text" name="name" value="{{$aut->name}}" placeholder="FIRST NAME" class="@error('email') is-invalid @enderror p-2 form-control border-1 border-secondary rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
   <div class="mb-2 col-md-6">
-    <input style="background-color: #ECE7DF" type="text" name="lastname" value="{{$aut->lastname}}" placeholder="LAST NAME" class="@error('password') is-invalid @enderror p-2 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
+    <input style="background-color: white" type="text" name="lastname" value="{{$aut->lastname}}" placeholder="LAST NAME" class="@error('password') is-invalid @enderror p-2 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
   </div>
   <div class="mb-2 col-md-6">
-    <input style="background-color: #ECE7DF" type="text" name="email" value="{{$aut->email}}" placeholder="EMAIL" class="@error('password') is-invalid @enderror p-2 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
+    <input style="background-color: white" type="text" name="email" value="{{$aut->email}}" placeholder="EMAIL" class="@error('password') is-invalid @enderror p-2 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
   </div>
   <div class="mb-2 col-md-6">
-    <input style="background-color: #ECE7DF" type="text" name="country" value="{{$aut->country}}"  placeholder="COUNTRY" class="@error('email') is-invalid @enderror p-2 form-control border-1 border-secondary rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input style="background-color: white" type="text" name="country" value="{{$aut->country}}"  placeholder="COUNTRY" class="@error('email') is-invalid @enderror p-2 form-control border-1 border-secondary rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
   <div class="mb-2 col-md-2">
-    <select name="day" class="form-select w-100 border-1 rounded-0 border-secondary text-center" style="background-color: #ECE7DF" aria-label="Default select example">
+    <select name="day" class="form-select w-100 border-1 rounded-0 border-secondary text-center" style="background-color: white" aria-label="Default select example">
       <option selected value="{{$aut->day}}">{{$aut->day}}</option>
       <?php $dates = \DB::table('dates')->get(); ?>
 
@@ -82,7 +82,7 @@
          </select>
       </div>
       <div class="mb-2 col-md-2">
-        <select name="mounth" class="form-select w-100 border-1 rounded-0 border-secondary text-center" style="background-color: #ECE7DF" aria-label="Default select example">
+        <select name="mounth" class="form-select w-100 border-1 rounded-0 border-secondary text-center" style="background-color: white" aria-label="Default select example">
           <option selected value="{{$aut->mounth}}">{{$aut->mounth}}</option>
           @foreach($dates as $item)
           @if(!empty($item->mounths))
@@ -93,7 +93,7 @@
             </div>
     
   <div class="mb-2 col-md-3">
-    <select name="year" class="form-select w-100 border-1 rounded-0 border-secondary text-center" style="background-color: #ECE7DF" aria-label="Default select example">
+    <select name="year" class="form-select w-100 border-1 rounded-0 border-secondary text-center" style="background-color: white" aria-label="Default select example">
       <option selected value="{{$aut->year}}">{{$aut->year}}</option>
       @foreach($dates as $item)
         @if(!empty($item->years))
@@ -103,7 +103,7 @@
     </select>
      </div>
   <div class="mb-2 col-md-5">
-    <input style="background-color: #ECE7DF" type="number" value="{{$aut->phone}}" name="phone" placeholder="PHONE" class="@error('password') is-invalid @enderror p-2 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
+    <input style="background-color: white" type="number" value="{{$aut->phone}}" name="phone" placeholder="PHONE" class="@error('password') is-invalid @enderror p-2 form-control border-1 border-secondary rounded-0" id="exampleInputPassword1">
   </div>
   
   <div class="w-100 text-end">

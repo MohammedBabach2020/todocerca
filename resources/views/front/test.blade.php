@@ -88,7 +88,7 @@
     <div class="container-fluid text-white pt-5" style="height:80vh;">
     <br>
     <br>
-        <h5 class="mt-5 pt-5" ><span style="font-size: 53pt">AFYLA</span>
+        <h5 class="mt-5 pt-5" ><span style="font-size: 53pt">TODO CERCA</span>
         <br>
         COMING SOON
         </h5>

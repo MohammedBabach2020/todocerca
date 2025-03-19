@@ -31,10 +31,10 @@ Order Confirmed
 <form class="row" method="POST" action="{{ route('confirm.login') }}">
     @csrf
     <div class="col-md-4 pt-1">
-      <input type="password" name="email" placeholder="Create password" class=" bg-none @error('email') is-invalid @enderror ps-1 pb-2 form-control border-top-0 border-start-0 border-end-0 border-2 border-dark rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" style="background-color: #ECE7DF">
+      <input type="password" name="email" placeholder="Create password" class=" bg-none @error('email') is-invalid @enderror ps-1 pb-2 form-control border-top-0 border-start-0 border-end-0 border-2 border-dark rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" style="background-color: white">
     </div>
     <div class="col-md-4 pt-1">
-      <input type="password" name="password" placeholder="Verify Password" class=" bg-none @error('password') is-invalid @enderror ps-1 pb-2 form-control border-top-0 border-start-0 border-end-0 border-2 border-dark rounded-0" id="exampleInputPassword1" style="background-color: #ECE7DF">
+      <input type="password" name="password" placeholder="Verify Password" class=" bg-none @error('password') is-invalid @enderror ps-1 pb-2 form-control border-top-0 border-start-0 border-end-0 border-2 border-dark rounded-0" id="exampleInputPassword1" style="background-color: white">
     </div>
 
     <div class="col-md-4">
